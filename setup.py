@@ -1,4 +1,15 @@
-#!/usr/bin/env python import setuptools readme = open('README.md').read() requirements = open("requirements.txt").readlines() test_requirements = open("requirements-test.txt").readlines() setuptools.setup( name = 'insteon-mqtt',
+#!/usr/bin/env python
+
+import setuptools
+
+readme = open('README.md').read()
+
+requirements = open("requirements.txt").readlines()
+
+test_requirements = open("requirements-test.txt").readlines()
+
+setuptools.setup(
+    name = 'insteon-mqtt',
     version = '1.1.3',
     description = "Insteon <-> MQTT bridge server",
     long_description = readme,
